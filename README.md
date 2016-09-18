@@ -1,6 +1,6 @@
 # ExCongress
 
-**TODO: Add description**
+ExCongress is an Elixir wrapper for the [Sunlight Labs Congress API](https://github.com/sunlightlabs/congress). 
 
 ## Installation
 
