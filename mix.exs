@@ -14,7 +14,7 @@ defmodule ExCongress.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :httpoison, :exjsx]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,10 @@ defmodule ExCongress.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+        {:httpoison, "~> 0.8"},
+        {:exjsx, "~> 3.2"},
+        {:dogma, "~> 0.1", only: :dev}
+    ]
   end
 end

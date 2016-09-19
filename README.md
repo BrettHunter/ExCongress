@@ -1,4 +1,4 @@
-# ExCongress
+# ExCongress    
 
 ExCongress is an Elixir wrapper for the [Sunlight Labs Congress API](https://github.com/sunlightlabs/congress). 
 
@@ -18,3 +18,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:ex_congress]]
         end
 
+## Example Usage
+
+    `   ssn = ExCongress.Client.new(%{api_key: "${API_KEY}"})
+        legislators = ExCongress.Legislators.list(ssn, %{"fields" => "bioguide_id", "per_page" => "100"})`
